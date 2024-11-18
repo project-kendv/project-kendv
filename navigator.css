@@ -12,9 +12,9 @@ main {
   width: 200px;
   border: solid #D2042D;
   height: auto;
-  animation-name: colorChange;
+  animation-name: colorChange , slideleft;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 .container2{ 
   text-align: center;
@@ -34,7 +34,14 @@ header {
   
 }
 .text1, .text2{
-  font-family: fantasy; margin: 10px; background-color: whitesmoke; color: black; border: groove black 1px
+  font-family: fantasy; 
+  margin: 10px; 
+  background-color: whitesmoke;
+  color: black; 
+  border: groove black 1px;
+  animation-name: slideleft;
+  animation-duration: 2s;
+  
 }
 .navbar ul {
   list-style-type: none;
@@ -114,7 +121,7 @@ a:hover{
   10%{ box-shadow:x 10px 0px 20px #D2042D}
 }
 @keyframes slideleft {
-  from {transform: translateX(90%)};
+  from {transform: translateX(30%)};
 }
 @keyframes colorChange {
   10%{box-shadow: 0px 0px 20px red}
